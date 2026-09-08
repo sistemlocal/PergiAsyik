@@ -94,12 +94,12 @@
     <div id="destinasi" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-slate-50">
         <div class="text-center mb-16 relative">
             <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">Destinasi Pilihan Kami</h2>
-            <p class="text-slate-600 text-lg max-w-2xl mx-auto">Dari pesona lokal Nusantara, modernitas Asia Tenggara, hingga destinasi ikonik di dunia. Harga tiket dan paket terus diperbarui secara otomatis.</p>
+            <p class="text-slate-600 text-lg max-w-2xl mx-auto">Dari pesona lokal Nusantara, modernitas Asia Tenggara, hingga destinasi ikonik di dunia. Data harga dan destinasi luar terus diperbarui secara otomatis.</p>
         </div>
 
         <div id="destinationsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             
-            <!-- Card: Paris -->
+            <!-- Card: Paris (Revisi 9D, 10D, 12D) -->
             <div class="dest-card bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col h-full group relative" data-title="Paris Prancis Eropa">
                 <div class="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-bl-xl z-20 shadow-md flex items-center gap-1">
                     <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -121,26 +121,58 @@
                                 <p class="font-bold text-slate-900 text-lg">Rp 28.500.000 - Rp 38.500.000</p>
                             </div>
                         </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-emerald-100 p-2 rounded-lg text-emerald-600"><i class="fa-solid fa-file-contract"></i></div>
+                            <div>
+                                <p class="text-sm text-slate-500 font-medium">Status Dokumen</p>
+                                <p class="font-bold text-emerald-700">Wajib Visa Schengen</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <h4 class="font-semibold text-slate-900 mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-shield-halved text-amber-500"></i> Persyaratan:
+                        </h4>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-start gap-3 text-slate-600 text-sm"><i class="fa-solid fa-circle-check text-blue-500 mt-0.5"></i> Visa Schengen yang valid</li>
+                            <li class="flex items-start gap-3 text-slate-600 text-sm"><i class="fa-solid fa-circle-check text-blue-500 mt-0.5"></i> Asuransi perjalanan</li>
+                            <li class="flex items-start gap-3 text-slate-600 text-sm"><i class="fa-solid fa-circle-check text-blue-500 mt-0.5"></i> Bukti akomodasi & dana</li>
+                        </ul>
+                        <button onclick="openModal('itinerary', 'paris')" class="text-blue-600 font-semibold text-sm hover:underline flex items-center gap-1">
+                            <i class="fa-solid fa-calendar"></i> intenerary (klik disini)
+                        </button>
                     </div>
 
                     <div class="border-t border-slate-100 pt-6 mt-auto">
-                        <h4 className="font-bold text-slate-900 mb-4">Pilihan Paket Wisata</h4>
+                        <h4 class="font-bold text-slate-900 mb-4">Pilihan Paket Wisata</h4>
                         <div class="space-y-4">
                             <!-- Paket 9D -->
                             <div class="bg-white border border-slate-200 rounded-xl p-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 hover:border-blue-300 transition-colors">
                                 <div>
                                     <h5 class="font-bold text-slate-800">Paris Explorer (9 Hari)</h5>
+                                    <p class="text-xs text-slate-500 mt-1">Tiket PP • Hotel Bintang 3 • Eiffel Access • City Tour</p>
                                     <p class="text-blue-600 font-bold mt-1">Rp 28.500.000</p>
                                 </div>
-                                <a href="https://wa.me/6281234567890?text=Halo Admin, saya tertarik paket Paris Explorer (9 Hari)" class="bg-green-500 hover:bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors flex items-center gap-2"><i class="fa-brands fa-whatsapp text-lg"></i> Pesan</a>
+                                <a href="https://wa.me/6285762977208?text=Halo Admin PergiAsyik, saya tertarik untuk memesan paket wisata ke Paris (Paris Explorer 9 Hari) seharga Rp 28.500.000. Mohon info selanjutnya." target="_blank" class="bg-green-500 hover:bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors flex items-center justify-center gap-2 w-full sm:w-auto"><i class="fa-brands fa-whatsapp text-lg"></i> Pesan Aman</a>
+                            </div>
+                            <!-- Paket 10D -->
+                            <div class="bg-white border border-slate-200 rounded-xl p-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 hover:border-blue-300 transition-colors">
+                                <div>
+                                    <h5 class="font-bold text-slate-800">Romantic Paris (10 Hari)</h5>
+                                    <p class="text-xs text-slate-500 mt-1">Tiket PP • Hotel Bintang 4 • River Cruise • Versailles</p>
+                                    <p class="text-blue-600 font-bold mt-1">Rp 32.000.000</p>
+                                </div>
+                                <a href="https://wa.me/6285762977208?text=Halo Admin PergiAsyik, saya tertarik untuk memesan paket wisata ke Paris (Romantic Paris 10 Hari) seharga Rp 32.000.000. Mohon info selanjutnya." target="_blank" class="bg-green-500 hover:bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors flex items-center justify-center gap-2 w-full sm:w-auto"><i class="fa-brands fa-whatsapp text-lg"></i> Pesan Aman</a>
                             </div>
                             <!-- Paket 12D -->
                             <div class="bg-white border border-slate-200 rounded-xl p-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 hover:border-blue-300 transition-colors">
                                 <div>
                                     <h5 class="font-bold text-slate-800">Paris & Beyond (12 Hari)</h5>
+                                    <p class="text-xs text-slate-500 mt-1">Tiket PP • Hotel Bintang 5 • Disneyland • Private Guide</p>
                                     <p class="text-blue-600 font-bold mt-1">Rp 38.500.000</p>
                                 </div>
-                                <a href="https://wa.me/6281234567890?text=Halo Admin, saya tertarik paket Paris Beyond (12 Hari)" class="bg-green-500 hover:bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors flex items-center gap-2"><i class="fa-brands fa-whatsapp text-lg"></i> Pesan</a>
+                                <a href="https://wa.me/6285762977208?text=Halo Admin PergiAsyik, saya tertarik untuk memesan paket wisata ke Paris (Paris & Beyond 12 Hari) seharga Rp 38.500.000. Mohon info selanjutnya." target="_blank" class="bg-green-500 hover:bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors flex items-center justify-center gap-2 w-full sm:w-auto"><i class="fa-brands fa-whatsapp text-lg"></i> Pesan Aman</a>
                             </div>
                         </div>
                     </div>
@@ -155,7 +187,7 @@
                 </div>
                 <div class="p-8 flex-grow flex flex-col">
                     <h3 class="text-2xl font-bold text-slate-900 mb-3">Tokyo, Jepang</h3>
-                    <p class="text-slate-600 mb-6 leading-relaxed flex-grow">Perpaduan sempurna tradisi kuno dan teknologi futuristik. Nikmati keindahan Gunung Fuji, dan gemerlap kota Tokyo.</p>
+                    <p class="text-slate-600 mb-6 leading-relaxed flex-grow">Perpaduan sempurna antara tradisi kuno dan teknologi futuristik. Nikmati sushi otentik, keindahan Gunung Fuji, dan gemerlap Akihabara.</p>
                     
                     <div class="space-y-4 mb-6 bg-slate-50 p-5 rounded-2xl border border-slate-100">
                         <div class="flex items-start gap-4">
@@ -166,22 +198,110 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="mb-6">
+                        <button onclick="openModal('itinerary', 'jepang')" class="text-blue-600 font-semibold text-sm hover:underline flex items-center gap-1">
+                            <i class="fa-solid fa-calendar"></i> intenerary (klik disini)
+                        </button>
+                    </div>
 
                     <div class="border-t border-slate-100 pt-6 mt-auto">
-                        <h4 className="font-bold text-slate-900 mb-4">Pilihan Paket Wisata</h4>
+                        <h4 class="font-bold text-slate-900 mb-4">Pilihan Paket Wisata</h4>
                         <div class="space-y-4">
                             <div class="bg-white border border-slate-200 rounded-xl p-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 hover:border-blue-300 transition-colors">
                                 <div>
                                     <h5 class="font-bold text-slate-800">Japan Ultimate</h5>
                                     <p class="text-blue-600 font-bold mt-1">Rp 21.000.000</p>
                                 </div>
-                                <a href="https://wa.me/6281234567890?text=Halo Admin, saya tertarik paket Japan Ultimate" class="bg-green-500 hover:bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors flex items-center gap-2"><i class="fa-brands fa-whatsapp text-lg"></i> Pesan</a>
+                                <a href="https://wa.me/6285762977208?text=Halo Admin PergiAsyik, saya tertarik untuk memesan paket wisata ke Tokyo (Japan Ultimate) seharga Rp 21.000.000. Mohon info selanjutnya." target="_blank" class="bg-green-500 hover:bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors flex items-center gap-2"><i class="fa-brands fa-whatsapp text-lg"></i> Pesan Aman</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             
+            <!-- Card: Selandia Baru (New Zealand) -->
+            <div class="dest-card bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col h-full group relative" data-title="New Zealand Selandia Baru Oseania">
+                <div class="relative h-72 overflow-hidden shrink-0">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80" alt="New Zealand" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
+                    <div class="absolute top-5 left-5 bg-white/95 backdrop-blur-sm px-4 py-1.5 rounded-full text-sm font-bold text-slate-800 shadow-sm">Oseania</div>
+                </div>
+                <div class="p-8 flex-grow flex flex-col">
+                    <h3 class="text-2xl font-bold text-slate-900 mb-3">Selandia Baru</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed flex-grow">Nikmati pemandangan alam spektakuler, gletser memukau, petualangan ekstrem di Queenstown serta kunjungi desa Hobbiton yang ikonik.</p>
+                    
+                    <div class="space-y-4 mb-6 bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-blue-100 p-2 rounded-lg text-blue-600"><i class="fa-solid fa-plane"></i></div>
+                            <div>
+                                <p class="text-sm text-slate-500 font-medium">Estimasi Tiket (Sekali Jalan)</p>
+                                <p class="font-bold text-slate-900 text-lg">Rp 12.000.000 - Rp 16.500.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <button onclick="openModal('itinerary', 'nz')" class="text-blue-600 font-semibold text-sm hover:underline flex items-center gap-1">
+                            <i class="fa-solid fa-calendar"></i> intenerary (klik disini)
+                        </button>
+                    </div>
+
+                    <div class="border-t border-slate-100 pt-6 mt-auto">
+                        <h4 class="font-bold text-slate-900 mb-4">Pilihan Paket Wisata</h4>
+                        <div class="space-y-4">
+                            <div class="bg-white border border-slate-200 rounded-xl p-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 hover:border-blue-300 transition-colors">
+                                <div>
+                                    <h5 class="font-bold text-slate-800">Middle-earth Adventure</h5>
+                                    <p class="text-blue-600 font-bold mt-1">Rp 35.000.000</p>
+                                </div>
+                                <a href="https://wa.me/6285762977208?text=Halo Admin PergiAsyik, saya tertarik untuk memesan paket wisata ke Selandia Baru (Middle-earth Adventure) seharga Rp 35.000.000. Mohon info selanjutnya." target="_blank" class="bg-green-500 hover:bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors flex items-center gap-2"><i class="fa-brands fa-whatsapp text-lg"></i> Pesan Aman</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card: Turki (Türkiye) -->
+            <div class="dest-card bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col h-full group relative" data-title="Cappadocia Turki Turkiye Eropa Timur Tengah">
+                <div class="relative h-72 overflow-hidden shrink-0">
+                    <img src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=800&q=80" alt="Turki" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
+                    <div class="absolute top-5 left-5 bg-white/95 backdrop-blur-sm px-4 py-1.5 rounded-full text-sm font-bold text-slate-800 shadow-sm">Eropa / Timur Tengah</div>
+                </div>
+                <div class="p-8 flex-grow flex flex-col">
+                    <h3 class="text-2xl font-bold text-slate-900 mb-3">Cappadocia, Türkiye</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed flex-grow">Perpaduan unik benua Asia dan Eropa. Nikmati sejarah Hagia Sophia, kemegahan Blue Mosque, dan terbang dengan balon udara di Cappadocia.</p>
+                    
+                    <div class="space-y-4 mb-6 bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-blue-100 p-2 rounded-lg text-blue-600"><i class="fa-solid fa-plane"></i></div>
+                            <div>
+                                <p class="text-sm text-slate-500 font-medium">Estimasi Tiket (Sekali Jalan)</p>
+                                <p class="font-bold text-slate-900 text-lg">Rp 9.000.000 - Rp 13.000.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <button onclick="openModal('itinerary', 'turki')" class="text-blue-600 font-semibold text-sm hover:underline flex items-center gap-1">
+                            <i class="fa-solid fa-calendar"></i> intenerary (klik disini)
+                        </button>
+                    </div>
+
+                    <div class="border-t border-slate-100 pt-6 mt-auto">
+                        <h4 class="font-bold text-slate-900 mb-4">Pilihan Paket Wisata</h4>
+                        <div class="space-y-4">
+                            <div class="bg-white border border-slate-200 rounded-xl p-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 hover:border-blue-300 transition-colors">
+                                <div>
+                                    <h5 class="font-bold text-slate-800">Cappadocia Dream</h5>
+                                    <p class="text-blue-600 font-bold mt-1">Rp 26.000.000</p>
+                                </div>
+                                <a href="https://wa.me/6285762977208?text=Halo Admin PergiAsyik, saya tertarik untuk memesan paket wisata ke Cappadocia (Cappadocia Dream) seharga Rp 26.000.000. Mohon info selanjutnya." target="_blank" class="bg-green-500 hover:bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors flex items-center gap-2"><i class="fa-brands fa-whatsapp text-lg"></i> Pesan Aman</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -198,39 +318,59 @@
             </div>
 
             <div class="space-y-4">
-                <!-- Accordion 1 -->
+                <!-- Accordion: Eropa/Schengen -->
                 <div class="bg-slate-800 border border-slate-700 rounded-2xl overflow-hidden">
-                    <button onclick="toggleAccordion('acc1')" class="w-full p-5 sm:p-6 flex items-center justify-between focus:outline-none hover:bg-slate-700/50 text-left">
+                    <button onclick="toggleAccordion('acc-eropa')" class="w-full p-5 sm:p-6 flex items-center justify-between focus:outline-none hover:bg-slate-700/50 text-left">
                         <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6">
                             <h3 class="text-xl font-bold text-white">Prancis / Eropa</h3>
                             <span class="bg-red-100 text-red-600 px-3 py-1 rounded-full text-xs font-bold">Wajib Visa Schengen</span>
                         </div>
-                        <i id="icon-acc1" class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                        <i id="icon-acc-eropa" class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
                     </button>
-                    <div id="acc1" class="accordion-content max-h-0 overflow-hidden bg-slate-800/50 px-6">
+                    <div id="acc-eropa" class="accordion-content max-h-0 overflow-hidden bg-slate-800/50 px-6">
                         <div class="pb-6 border-t border-slate-700/50 pt-4">
                             <ul class="space-y-3">
-                                <li class="flex items-start gap-3 text-slate-300 text-sm"><i class="fa-solid fa-circle-check text-blue-500 mt-1"></i> Paspor asli (berlaku min. 3 bulan).</li>
-                                <li class="flex items-start gap-3 text-slate-300 text-sm"><i class="fa-solid fa-circle-check text-blue-500 mt-1"></i> Asuransi Perjalanan (Travel Insurance).</li>
+                                <li class="flex items-start gap-3 text-slate-300 text-sm"><i class="fa-solid fa-circle-check text-blue-500 mt-1"></i> Paspor asli (berlaku min. 3 bulan dari tanggal kepulangan).</li>
+                                <li class="flex items-start gap-3 text-slate-300 text-sm"><i class="fa-solid fa-circle-check text-blue-500 mt-1"></i> Asuransi Perjalanan (Travel Insurance) nilai min €30.000.</li>
+                                <li class="flex items-start gap-3 text-slate-300 text-sm"><i class="fa-solid fa-circle-check text-blue-500 mt-1"></i> Wajib hadir untuk perekaman biometrik di VFS Global.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                
-                 <!-- Accordion 2 -->
-                 <div class="bg-slate-800 border border-slate-700 rounded-2xl overflow-hidden">
-                    <button onclick="toggleAccordion('acc2')" class="w-full p-5 sm:p-6 flex items-center justify-between focus:outline-none hover:bg-slate-700/50 text-left">
+
+                <!-- Accordion: China -->
+                <div class="bg-slate-800 border border-slate-700 rounded-2xl overflow-hidden">
+                    <button onclick="toggleAccordion('acc-china')" class="w-full p-5 sm:p-6 flex items-center justify-between focus:outline-none hover:bg-slate-700/50 text-left">
                         <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6">
-                            <h3 class="text-xl font-bold text-white">Singapura</h3>
-                            <span class="bg-emerald-100 text-emerald-600 px-3 py-1 rounded-full text-xs font-bold">Bebas Visa (30 Hari)</span>
+                            <h3 class="text-xl font-bold text-white">Tiongkok (China)</h3>
+                            <span class="bg-amber-100 text-amber-600 px-3 py-1 rounded-full text-xs font-bold">Wajib Visa (L-Visa)</span>
                         </div>
-                        <i id="icon-acc2" class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                        <i id="icon-acc-china" class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
                     </button>
-                    <div id="acc2" class="accordion-content max-h-0 overflow-hidden bg-slate-800/50 px-6">
+                    <div id="acc-china" class="accordion-content max-h-0 overflow-hidden bg-slate-800/50 px-6">
                         <div class="pb-6 border-t border-slate-700/50 pt-4">
                             <ul class="space-y-3">
-                                <li class="flex items-start gap-3 text-slate-300 text-sm"><i class="fa-solid fa-circle-check text-blue-500 mt-1"></i> Wajib mengisi SG Arrival Card (SGAC) 3 hari sebelum ketibaan.</li>
-                                <li class="flex items-start gap-3 text-slate-300 text-sm"><i class="fa-solid fa-circle-check text-blue-500 mt-1"></i> Paspor aktif 6 bulan.</li>
+                                <li class="flex items-start gap-3 text-slate-300 text-sm"><i class="fa-solid fa-circle-check text-blue-500 mt-1"></i> Formulir Aplikasi Visa China beserta Pas Foto (3.3 x 4.8 cm).</li>
+                                <li class="flex items-start gap-3 text-slate-300 text-sm"><i class="fa-solid fa-circle-check text-blue-500 mt-1"></i> Tiket pesawat pulang pergi dan pemesanan hotel detail.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion: Selandia Baru -->
+                <div class="bg-slate-800 border border-slate-700 rounded-2xl overflow-hidden">
+                    <button onclick="toggleAccordion('acc-nz')" class="w-full p-5 sm:p-6 flex items-center justify-between focus:outline-none hover:bg-slate-700/50 text-left">
+                        <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6">
+                            <h3 class="text-xl font-bold text-white">Selandia Baru</h3>
+                            <span class="bg-red-100 text-red-600 px-3 py-1 rounded-full text-xs font-bold">Wajib Visitor Visa</span>
+                        </div>
+                        <i id="icon-acc-nz" class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div id="acc-nz" class="accordion-content max-h-0 overflow-hidden bg-slate-800/50 px-6">
+                        <div class="pb-6 border-t border-slate-700/50 pt-4">
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3 text-slate-300 text-sm"><i class="fa-solid fa-circle-check text-blue-500 mt-1"></i> Bukti finansial sangat kuat (Rekening koran 3-6 bulan).</li>
+                                <li class="flex items-start gap-3 text-slate-300 text-sm"><i class="fa-solid fa-circle-check text-blue-500 mt-1"></i> Surat Keterangan Kerja & terjemahan Bahasa Inggris Sworn Translator.</li>
                             </ul>
                         </div>
                     </div>
@@ -250,7 +390,7 @@
                     </p>
                 </div>
                 <div class="p-10 md:p-14 lg:w-3/5 bg-white">
-                    <form onsubmit="event.preventDefault(); alert('Request Terkirim!');" class="space-y-6">
+                    <form onsubmit="event.preventDefault(); alert('Request Terkirim ke WhatsApp 0857-6297-7208');" class="space-y-6">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <input type="text" class="w-full px-5 py-3 rounded-xl border bg-slate-50" placeholder="Nama Lengkap" required />
                             <input type="text" class="w-full px-5 py-3 rounded-xl border bg-slate-50" placeholder="Tujuan Spesifik" required />
@@ -276,9 +416,24 @@
         </div>
     </footer>
 
+    <!-- Modals (Itinerary) -->
+    <div id="modal-container" class="fixed inset-0 bg-slate-900/60 z-[100] hidden items-center justify-center backdrop-blur-sm p-4">
+        <div class="bg-white rounded-3xl max-w-2xl w-full shadow-2xl overflow-hidden flex flex-col max-h-[90vh] modal-animate">
+            <div class="bg-blue-600 p-6 flex justify-between items-center text-white shrink-0">
+                <h3 class="font-bold text-xl flex items-center gap-2"><i class="fa-solid fa-calendar-days"></i> Itinerary</h3>
+                <button onclick="closeModal()" class="hover:bg-blue-700 p-2 rounded-full transition-colors"><i class="fa-solid fa-xmark text-xl"></i></button>
+            </div>
+            <div class="p-6 overflow-y-auto">
+                <div id="modal-content" class="space-y-6">
+                    <!-- Injeksi JS disini -->
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script>
-        // 1. Clock
+        // 1. Clock (Realtime)
         setInterval(() => {
             document.getElementById('current-time').innerText = new Date().toLocaleString('id-ID', {
                 timeZone: 'Asia/Jakarta', weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit'
@@ -300,7 +455,7 @@
             }
         }
 
-        // 3. Accordion
+        // 3. Accordion Visa
         function toggleAccordion(id) {
             const content = document.getElementById(id);
             const icon = document.getElementById('icon-' + id);
@@ -312,6 +467,77 @@
                 content.style.maxHeight = content.scrollHeight + "px";
                 icon.classList.add('rotate-180');
             }
+        }
+
+        // 4. Modal Itinerary
+        const itineraryData = {
+            'paris': [
+                'Hari 1: Penerbangan dari Jakarta menuju Paris (CDG).',
+                'Hari 2: Tiba di Paris, Check-in Hotel, Istirahat & Acara Bebas.',
+                'Hari 3: City Tour: Menara Eiffel & Seine River Cruise.',
+                'Hari 4: Wisata Budaya: Louvre Museum & Arc de Triomphe.',
+                'Hari 5: Montmartre, Sacré-Cœur, & Moulin Rouge (Opsional).',
+                'Hari 6: Day Trip ke Istana Versailles & Taman Klasik Prancis.',
+                'Hari 7: Eksplorasi Latin Quarter, Panthéon & Luxembourg Gardens.',
+                'Hari 8: Rekreasi Keluarga di Disneyland Paris (Full Day).',
+                'Hari 9: Shopping di Galeries Lafayette (Akhir program paket 9D).',
+                'Hari 10: Wisata Kuliner & French Bakery Tour (Akhir program paket 10D).',
+                'Hari 11: Day Trip eksklusif ke Mont Saint-Michel.',
+                'Hari 12: Check-out, Transfer ke Bandara CDG, Penerbangan Pulang.'
+            ],
+            'jepang': [
+                'Hari 1: Ketibaan Narita/Haneda, Check-in Shinjuku.',
+                'Hari 2: Asakusa (Senso-ji), Tokyo Skytree, Akihabara.',
+                'Hari 3: Shibuya Crossing, Harajuku, Meiji Shrine.',
+                'Hari 4: Day trip ke Gunung Fuji & Kawaguchiko Lake.',
+                'Hari 5: Belanja di Ginza, Penerbangan pulang.'
+            ],
+            'nz': [
+                'Hari 1: Tiba di Auckland, Sky Tower.',
+                'Hari 2: Day trip ke Hobbiton Movie Set, Waitomo Glowworm Caves.',
+                'Hari 3: Penerbangan domestik ke Queenstown, Skyline Gondola.',
+                'Hari 4: Milford Sound Cruise, Eksplorasi Fjord.',
+                'Hari 5: Lake Tekapo, Persiapan penerbangan pulang.'
+            ],
+            'turki': [
+                'Hari 1: Tiba di Istanbul, Bosphorus Cruise.',
+                'Hari 2: Hagia Sophia, Blue Mosque, Topkapi Palace.',
+                'Hari 3: Penerbangan ke Cappadocia, Goreme Open Air Museum.',
+                'Hari 4: Hot Air Balloon, Underground City Kaymakli.',
+                'Hari 5: Belanja di Grand Bazaar, Penerbangan pulang.'
+            ]
+        };
+
+        function openModal(type, destinationKey) {
+            const container = document.getElementById('modal-container');
+            const content = document.getElementById('modal-content');
+            
+            content.innerHTML = '';
+            
+            if (itineraryData[destinationKey]) {
+                itineraryData[destinationKey].forEach((day, index) => {
+                    content.innerHTML += `
+                        <div class="flex gap-4">
+                            <div class="flex flex-col items-center">
+                                <div class="bg-blue-100 text-blue-600 w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm shrink-0">${index + 1}</div>
+                            </div>
+                            <div class="pb-6">
+                                <h4 class="font-bold text-slate-800 text-lg mb-1">Hari ${index + 1}</h4>
+                                <p class="text-slate-600 leading-relaxed">${day}</p>
+                            </div>
+                        </div>
+                    `;
+                });
+            }
+            
+            container.classList.remove('hidden');
+            container.classList.add('flex');
+        }
+
+        function closeModal() {
+            const container = document.getElementById('modal-container');
+            container.classList.add('hidden');
+            container.classList.remove('flex');
         }
     </script>
 </body>
